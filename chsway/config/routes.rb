@@ -1,4 +1,7 @@
 Chsway::Application.routes.draw do
+  resources :ideas
+
+
   resources :end_users
 
 
