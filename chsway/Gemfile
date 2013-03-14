@@ -21,6 +21,8 @@ group :assets do
   gem 'uglifier', '>= 1.0.3'
 end
 
+gem 'devise', '~> 1.4.3'
+
 gem 'jquery-rails'
 
 # To use ActiveModel has_secure_password
@@ -42,3 +44,14 @@ gem 'jquery-rails'
 gem 'execjs'
 
 gem 'therubyracer'
+
+
+group :test, :development do
+  gem 'rspec-rails', '~> 2.6.1.beta1'
+end
+
+group :test do
+  gem 'cucumber-rails'
+  gem 'capybara'
+  gem 'database_cleaner'
+end
